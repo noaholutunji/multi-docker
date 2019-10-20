@@ -17,7 +17,7 @@ after_success:
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take these build images and push to docker hub
-  - docker push noahosuolale/multi-client
-  - docker push noahosuolale/multi-nginx
-  - docker push noahosuolale/multi-server
-  - docker push noahosuolale/multi-worker
+  - docker push noalistic/multi-client
+  - docker push noalistic/multi-nginx
+  - docker push noalistic/multi-server
+  - docker push noalistic/multi-worker
