@@ -10,10 +10,10 @@ script:
 
 after_success:
   # build docker images
-  - docker build -t noahosuolale/multi-client ./client
-  - docker build -t noahosuolale/multi-nginx ./nginx
-  - docker build -t noahosuolale/multi-server ./server
-  - docker build -t noahosuolale/multi-worker ./worker
+  - docker build -t noalistic/multi-client ./client
+  - docker build -t noalistic/multi-nginx ./nginx
+  - docker build -t noalistic/multi-server ./server
+  - docker build -t noalistic/multi-worker ./worker
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take these build images and push to docker hub
